@@ -10,7 +10,7 @@ For example, Linux is used in smartphones, tablets, websites, and smart TVs. It 
 
 As I continue to study Linux, I am learning how it works under the surface. I am practicing basic commands in the terminal, learning how the file system is organized, and exploring how Linux is used on servers. At first, it was a little hard to understand, but each day I feel more confident. I now see how important Linux is for careers in IT, especially in fields like cybersecurity, cloud computing, and network management.
 
-What inspires me the most is knowing that these skills can help me in the real world. Linux is not just for big companies. It is used in small businesses, healthcare, schools, and even cars. The more I learn, the more I want to keep going. I see now that Linux is not just an operating system—it is a powerful tool that helps keep the modern world running.
+What inspires me the most is knowing that these skills can help me in the real world. Linux is not just for big companies. It is used in small businesses, healthcare, schools, and even cars. The more I learn, the more I want to keep going. I see now that Linux is not just an operating system, it is a powerful tool that helps keep the modern world running.
 
 This is just the beginning for me, but I am proud to be learning something that has such a big role in technology today. I will continue sharing my progress and encouraging others who want to start their tech journey too.
 
