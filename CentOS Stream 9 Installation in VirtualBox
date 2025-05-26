@@ -1,0 +1,27 @@
+# CentOS Stream 9 Installation in VirtualBox
+
+This guide documents how I installed CentOS Stream 9 in VirtualBox as part of my IT learning journey.
+
+## ISO Used
+- File: CentOS-Stream-9-latest-x86_64-dvd1.iso
+- Size: ~7.2 GB (full DVD ISO)
+
+## VirtualBox Settings
+- OS Type: Linux
+- Version: Red Hat (64-bit)
+- Memory: 2048 MB (2 GB)
+- Disk: 20 GB
+- EFI: Enabled
+- Video Memory: 64 MB
+- Mounted ISO on Controller: IDE
+
+## Steps
+1. Boot VM and select “Install CentOS Stream 9”
+2. Skip media check
+3. Select language and region
+4. Set up:
+   - Installation destination
+   - Network & hostname
+   - Root password and user creation
+5. Begin installation and reboot
+
