@@ -1,0 +1,36 @@
+Installing Red Hat Enterprise Linux (RHEL) for RHCSA Practice
+This post outlines the steps I followed to install RHEL in a VirtualBox virtual machine as part of my RHCSA 30-day challenge.
+
+Step 1: Register for a Red Hat Developer Account
+Go to Red Hat Developer and create a free account. This gives you access to download RHEL and use it for learning purposes.
+
+Step 2: Download the RHEL ISO File
+After signing in, go to the "Downloads" section and choose "Red Hat Enterprise Linux 9." Select the x86_64 architecture ISO file. This file will be used to install the OS in VirtualBox.
+
+Step 3: Install Oracle VirtualBox
+If you don't have VirtualBox installed, download it from virtualbox.org. Install it on your computer to run the virtual machine.
+
+Step 4: Create a New Virtual Machine
+Open VirtualBox and click “New.”
+
+Name your machine (e.g., RedHat-VirtualMachine)
+
+Set the type to Linux and version to Red Hat (64-bit)
+
+Allocate at least 2048 MB (2 GB) of RAM
+
+Create a virtual hard disk (recommended size: 20 GB or more)
+
+Step 5: Attach the RHEL ISO to Your VM
+Go to your VM’s Settings
+Click “Storage”
+Click the empty disk under Controller: IDE
+Select “Choose a disk file” and browse to your downloaded RHEL ISO
+Click OK
+
+Step 6: Start the Virtual Machine
+Click Start
+Your VM will boot from the ISO
+Follow the on-screen instructions to install Red Hat Linux (language, keyboard, installation destination, user setup)
+
+Once installed, you’ll be able to log into your RHEL system and start running RHCSA practice commands using the terminal
