@@ -1,0 +1,59 @@
+ My Linux Journey
+
+Symbols Above Numbers.  More Than Just Typing.
+
+Do you know what the symbols above the number keys mean in Linux? If you've been using a keyboard for years but never explored Linux, you'll find that these symbols are not just for decoration. They have powerful uses in the Linux shell.
+
+Let’s walk through these symbols and see what they do.
+
+! (Exclamation or Bang)
+
+Used often in shell history. You can repeat commands by typing something like !ls, which runs the last ls command you typed. In scripting, it's also part of the shebang line (#!/bin/bash), telling the system which interpreter to use.
+
+@ (At sign)
+
+Most commonly seen in email addresses like user@example.com, but in Linux, it's also used in references, especially in SSH or Git. For example:
+
+ssh user@192.168.1.1
+
+# (Pound or Hashtag)
+
+This is your comment key in scripting. Anything written after a # in a script is ignored by the system. It’s useful for notes, instructions, or temporarily disabling a line of code:
+
+# This is a comment
+
+In configuration files, you’ll see many lines start with # to provide context.
+
+$ (Dollar sign)
+
+This symbol is your gateway to variables. It references environment variables like:
+
+echo $HOME
+echo $USER
+
+In scripts, it's used to define and access custom variables:
+
+name="Desiree"
+echo $name
+
+% (Percent)
+
+Used less frequently, but still valuable. It can be seen when dealing with job control in the shell, or occasionally in scripting loops and calculations. Example:
+
+jobs
+fg %1
+
+This brings job 1 to the foreground.
+
+Quick Tip
+
+To access all of these symbols, hold Shift and the corresponding number key. Practice typing them in your terminal to build muscle memory.
+
+Why It Matters
+
+These symbols help you control how commands run, document your scripts, and navigate your system more efficiently. Once you start using them regularly, you’ll realize how powerful and important they are.
+
+Tomorrow in Day 3, I will show you the importance of wildcards, pipes, and redirection. These are key tools for combining Linux commands and managing system output.
+
+Follow along and let’s keep learning one key at a time.
+
