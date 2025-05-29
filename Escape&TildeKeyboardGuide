@@ -1,0 +1,32 @@
+Mastering the Escape and Tilde Keys in Linux
+
+
+As someone transitioning into IT, understanding the basic keyboard keys used in Linux is a crucial first step. You might already know these keys from general computer use, but in Linux, they often have very specific functions. Today, I want to highlight two of the most important: the Escape key and the Tilde (~) key.
+
+The Escape Key: Your Exit Strategy
+
+The Escape (Esc) key sits at the top-left corner of your keyboard. In Linux, especially when you're working with text editors like vi or vim, this key becomes your lifesaver. When you enter insert mode and start typing, hitting the Esc key brings you back to command mode.
+
+Think of Esc as the way to cancel, back out, or switch modes. You’ll need this constantly in the Linux world. For example:
+
+vi myfile.txt
+
+Once you start editing, press Esc to switch to command mode and type :wq to save and exit. If you’re ever stuck or unsure, try Esc first.
+
+The Tilde (~): Your Home Shortcut
+
+Right below the Esc key, you’ll often find the Tilde (~). It’s that little squiggly symbol you may never have used — but in Linux, it’s your shortcut to home.
+
+In Linux, the home directory is where your personal files and settings are stored. The tilde acts as a shorthand for this path. For example:
+
+cd ~
+
+This command takes you straight to your home directory, no matter where you are in the system.
+
+This shortcut is super helpful when navigating files. Instead of typing a long path like /home/username, just use ~.
+
+Why This Matters
+
+When you're starting with Linux, these small keys make a big difference. Mastering them early will save you time, help you troubleshoot faster, and make you feel more in control. These keys are the foundation for everything else you'll do with the command line and scripting.
+
+Whether you’re using Red Hat, Ubuntu, or any Linux distro, you'll see these two keys in action daily. They’re small, but mighty.
