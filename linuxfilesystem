@@ -1,0 +1,27 @@
+Learning to Navigate the Linux File System
+
+One of the first practical skills I learned when starting my Linux journey was navigating the file system using the terminal. This is one of the core building blocks of becoming comfortable with Linux, especially if you are preparing for a tech career or certifications like CompTIA Linux Plus. Unlike Windows, where users interact with folders through clicking, Linux uses command-line tools that give you full control of where you are and what you are doing in the system.
+
+The first command I encountered was cd, which stands for change directory. This command allows you to move from one folder to another. For example, typing cd /etc moves you into the etc directory. If you want to go back up one level, you can use cd ... To go straight back to the root directory, use cd /.
+
+Next, I learned pwd, which stands for print working directory. This command tells you exactly where you are in the file system. If you ever get lost or forget where you navigated to, just type pwd and the system will return the full path of your current location.
+
+Finally, the ls command, which stands for list, shows the contents of the directory you are in. Adding the -l option gives you more details, such as file sizes, permissions, and dates. For example, ls -l in the /etc directory will list all the configuration files and directories it contains.
+
+When I compared this to using Windows, I realized that Linux breaks down each step. In Windows, a single double-click opens a folder, displays its contents, and updates your current location. In Linux, you perform each of these steps individually. This gives you a clearer understanding of what is happening at every stage.
+
+To practice, I recommend opening your terminal and trying the following sequence:
+
+cd /
+pwd
+ls -l
+cd var
+ls -l
+cd log
+ls -l
+pwd
+cd /
+
+These steps will help you get used to how Linux structures its directories and how to move through them with confidence.
+
+As someone transitioning into IT, building comfort with these basics has made a big difference in how I approach more complex tasks. I encourage anyone beginning their Linux journey to master these three essential commands. They are small steps that lead to a stronger foundation.
