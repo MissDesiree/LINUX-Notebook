@@ -1,0 +1,59 @@
+# 3 Easy Ways to Create Files in Linux (For Beginners)
+
+If you're learning Linux, one of the first things you'll need to know is how to create files. Here are three simple ways to do that from the command line.
+
+## 1. Use `touch` to Create Empty Files
+
+```bash
+touch filename
+```
+
+Example:
+
+```bash
+touch Jerry
+```
+
+This creates an empty file named `Jerry`.
+
+## 2. Use `cp` to Create a New File from an Existing File
+
+```bash
+cp source_file destination_file
+```
+
+Example:
+
+```bash
+cp Jerry Lex
+```
+
+This copies the contents of `Jerry` into a new file called `Lex`.
+
+## 3. Use `vi` or `vim` to Create and Edit Files
+
+```bash
+vi Homer
+```
+
+To save and exit:
+
+* Press `Esc`
+* Type `:wq!`
+* Hit `Enter`
+
+This creates a new file called `Homer`.
+
+## Verify Your Files
+
+```bash
+ls -ltr
+```
+
+This command shows files sorted by time, with the newest files at the bottom.
+
+---
+
+✅ Now you’ve learned how to create files in 3 different ways. Practice by making your own files and see the results using `ls -ltr`.
+
+\#Linux #RHCSA #FromHealthcareToTech #BeginnerFriendly
