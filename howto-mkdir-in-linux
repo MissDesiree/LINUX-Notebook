@@ -1,0 +1,41 @@
+# How to Make Directories in Linux (Using `mkdir`)
+
+Creating folders (directories) in Linux is easy with the `mkdir` command. Here's how to do it.
+
+## Step 1: Check Where You Are
+
+```bash
+pwd
+```
+
+Make sure you're in your home directory or a location where you have permission to create folders.
+
+## Step 2: Create a Single Directory
+
+```bash
+mkdir Seinfeld
+```
+
+This creates a folder named `Seinfeld`.
+
+## Step 3: Create Multiple Directories at Once
+
+```bash
+mkdir Superman Simpson
+```
+
+This creates both `Superman` and `Simpson` directories in one line.
+
+## Step 4: Check Your Work
+
+```bash
+ls -ltr
+```
+
+You’ll see the new directories listed at the bottom. Some systems show directories in a different color to make them easier to spot.
+
+---
+
+⚠️ **Note:** If you try to create directories in system folders like `/etc`, you’ll get a permission error. Only the root user can create files there.
+
+\#LinuxLearning #TerminalCommands #TechJourney #WomenInTech
