@@ -1,0 +1,17 @@
+Understanding the Find Command in Linux
+
+When working in the Linux terminal, searching for files efficiently is a vital skill. The find command is one of the most powerful tools available for this purpose. Unlike other search tools, find scans the actual file system in real time, making it extremely accurate.
+
+For example, if Susan creates a file named susan using:
+
+touch susan
+
+She can find it in the current directory using:
+
+find . -name susan
+
+Here, . means the current directory, and -name specifies the exact file name to search for. If she wants to be more specific, she can use the full path:
+
+find /home/susan -name susan
+
+This command will walk through every folder in the specified path and report if it finds a file named susan. The find command is reliable because it searches live from the disk, so no matter how new or recently moved the file is, find will pick it up.
