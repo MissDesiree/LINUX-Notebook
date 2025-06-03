@@ -1,0 +1,58 @@
+ Uses of Wildcards in Linux
+As a future system administrator, you'll be expected to handle hundreds or even thousands of files every day. Wildcards make your job faster, easier, and more efficient. Here's how.
+
+Why Wildcards Matter in the Real World
+Imagine your server logs generate 500 files a day. Manually typing every file name would waste hours. Wildcards let you automate file operations without making mistakes or wasting time.
+
+1. Cleaning Up Old Log Files
+bash
+Copy
+Edit
+rm /var/logs/app_log_2023-05-*.log
+Deletes all logs from May 2023 without touching other months.
+
+2. Batch Renaming Files
+bash
+Copy
+Edit
+mv *.bak backup/
+Moves all .bak files into the backup folder in one command.
+
+3. Finding Error Files
+bash
+Copy
+Edit
+ls error_?.txt
+Lists files like error_1.txt, error_2.txt, etc., but not error_12.txt.
+
+4. Selective File Listing
+bash
+Copy
+Edit
+ls report_[A-C]*.pdf
+Lists all PDF reports that start with report_A, report_B, or report_C.
+
+5. Creating Bulk Directories for Users
+bash
+Copy
+Edit
+mkdir user_{01..10}
+Creates 10 folders: user_01, user_02, … user_10.
+
+Perfect for setting up home directories or project folders.
+
+Best Practices
+Always double-check with ls before using rm and wildcards
+
+Use wildcards inside scripts to handle files dynamically
+
+Combine with find, grep, or xargs for more advanced operations
+
+Practice Task
+Create a test directory
+
+Use touch with braces to create test files
+
+Try listing, moving, and deleting using different wildcards
+
+Wildcards are more than shortcuts — they’re time-savers and life-savers in real-world Linux environments.
