@@ -1,0 +1,65 @@
+Soft Links in Linux 
+Now that you understand what an inode is, let’s talk about one of the most common file types in Linux: the soft link, also called a symbolic link.
+
+A soft link is like a shortcut, similar to the shortcuts you create on a Windows desktop.
+
+What Is a Soft Link?
+A soft link is a special file that points to another file by name, not by its inode. If the original file is deleted or renamed, the soft link breaks.
+
+How to Create a Soft Link
+The command to create a soft link is:
+
+bash
+Copy
+Edit
+ln -s source_file link_name
+Example:
+
+bash
+Copy
+Edit
+ln -s /home/user/Hulk /tmp/Hulk_link
+This creates a soft link called Hulk_link in the /tmp directory, pointing to the original Hulk file.
+
+How to Recognize a Soft Link
+Use the ls -l command:
+
+bash
+Copy
+Edit
+ls -l
+You’ll see something like:
+
+sql
+Copy
+Edit
+lrwxrwxrwx 1 user user 12 Jun 11 12:45 Hulk_link -> /home/user/Hulk
+Key details:
+
+The l at the start indicates a link.
+
+It clearly shows the path the link is pointing to.
+
+What Happens If the Source File Is Deleted?
+If you delete or rename the source file, the soft link still exists, but it no longer works.
+
+bash
+Copy
+Edit
+cat Hulk_link
+You’ll see:
+
+yaml
+Copy
+Edit
+No such file or directory
+This happens because the link only knows the file name, not the actual data or inode.
+
+Summary
+A soft link is a pointer to a file by name.
+
+It has its own inode, different from the original file.
+
+If the original file is removed or renamed, the link breaks.
+
+You can use soft links across different file systems.
