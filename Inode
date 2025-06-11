@@ -1,0 +1,48 @@
+Understanding Inodes in Linux
+Before diving into soft links and hard links in Linux, it's important to understand what an inode is. The concept may sound technical, but it's a key part of how Linux organizes and tracks files behind the scenes.
+
+What is an Inode?
+When you create a file in Linux, the operating system assigns it a unique number on the disk. This number is called an inode.
+
+The file name is for human understanding.
+The inode number is how the system actually tracks the file.
+
+An inode stores:
+
+The file's metadata (owner, permissions, timestamps)
+
+A pointer to the actual data on disk
+
+It does not store:
+
+The file name
+
+The file content
+
+Why Inodes Matter
+When you view or edit a file, Linux doesn’t search by name. It uses the inode to find the data quickly. File names are just labels linked to inodes.
+
+This is also why you can have multiple file names (hard links) pointing to the same inode — because what really matters is the inode, not the name.
+How to View Inodes
+To see the inode number of a file, use the -i option with ls:
+
+bash
+Copy
+Edit
+ls -li
+Example output:
+
+css
+Copy
+Edit
+123456 -rw-r--r-- 1 user user  0 Jun 11 12:34 example.txt
+Here, 123456 is the inode number for example.txt.
+
+Summary
+Every file in Linux has a unique inode number.
+
+Inodes hold metadata and point to data blocks, but not file names.
+
+Links (soft or hard) work by pointing to the inode or file path.
+
+Understanding inodes helps explain how links behave when files are renamed or deleted.
