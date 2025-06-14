@@ -1,0 +1,28 @@
+Understanding Linux File Permissions
+Ever wondered how Linux keeps your files safe from prying eyes? It’s all in the permissions.
+
+Linux is a multi-user system, which means many users can access the same system. To keep your files private, Linux gives every file and directory three types of permissions: read (r), write (w), and execute (x).
+
+These permissions are controlled at three levels:
+
+User (u) – The file owner
+
+Group (g) – A group of users
+
+Others (o) – Everyone else
+
+When you run the command ls -l, you’ll see a line like this:
+
+csharp
+Copy
+Edit
+-rw-rw-r-- 1 user group  0 Jun 14 12:00 jerry.txt
+This tells you:
+
+It's a file (-)
+
+The owner and group can read and write
+
+Others can only read
+
+This system lets you control exactly who can do what with your files, protecting your environment from mistakes or misuse.
