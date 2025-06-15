@@ -1,0 +1,19 @@
+Give Yourself Access, Block Others
+Let’s say you only want yourself to have access (read and write), but no one else.
+
+bash
+
+chmod 600 sam
+ls -l sam
+Output:
+
+bash
+
+-rw------- 1 user user 0 date sam
+This command:
+
+Gives you rw (6)
+
+Gives group and others --- (0)
+
+This is one of the most common settings for configuration files like .ssh/id_rsa.
