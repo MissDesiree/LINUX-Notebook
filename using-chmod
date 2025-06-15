@@ -1,0 +1,32 @@
+How to Use chmod with Numbers in Linux
+Let’s take a hands-on example. Open your terminal and try this:
+
+bash
+
+touch sam
+chmod 764 sam
+ls -l sam
+What just happened?
+
+You created a file named sam
+
+You gave the owner full access (read, write, execute)
+
+The group got read and write
+
+Others got read-only
+
+You’ll see this output:
+
+bash
+
+-rwxrw-r-- 1 user user 0 date sam
+Let’s break it down:
+
+rwx → user (7)
+
+rw- → group (6)
+
+r-- → others (4)
+
+This is the power of using numeric permissions. You get full control with just three digits!
