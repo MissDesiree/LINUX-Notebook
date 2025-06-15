@@ -1,0 +1,19 @@
+Removing All Permissions in Linux
+Want to lock a file completely? Try this:
+
+bash
+
+chmod 000 sam
+ls -l sam
+Output:
+
+bash
+Copy
+Edit
+---------- 1 user user 0 date sam
+This means:
+
+No one (not even the owner) can read, write, or execute the file without sudo
+
+This is useful when you want to protect sensitive files from accidental edits or viewing.
+
